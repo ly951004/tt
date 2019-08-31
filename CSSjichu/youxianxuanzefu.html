@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>文档标题</title>
+<style>
+ol li{height: 50px;
+   background: blue;
+}
+li{
+    height: 50px;
+    background:green;
+}/*同级样式后者自动覆盖前者   类型(1)*/ 
+.list{
+    height: 50px;
+    background :red;
+}
+.list1{
+    height: 50px;
+    background: pink;
+}
+#box{
+    height: 50px;
+    background: black;
+}/*类型< class< id< style（行间样式）（优先选择符）*/
+</style>
+</head>
+<body>
+<ol>
+<li class="list list1" id="box"></li>
+<li class="list list1"></li>
+<li class="list"></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+</body>
+</html>

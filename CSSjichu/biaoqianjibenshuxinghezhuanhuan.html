@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>标题文档</title>
+<style>
+span,div{ background: blue;widows: 100px; height: 100px;}
+/*内嵌：默认同行后面可以继续跟同类型标签，不支持外.内边距，不支持宽高。
+块：默认同行后面独显一行，支持css所有命令。*/
+span{ display: block;}/*内嵌转换块*/
+div{ display: inline;}/*块转换为内嵌*/
+</style>
+</head>
+<body>
+<span>区分样式</span>  
+<span>区分样式</span> 
+<span>区分样式</span> 
+<div>块</div> 
+</body>
+</html>
